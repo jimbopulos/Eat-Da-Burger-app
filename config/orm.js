@@ -89,5 +89,5 @@ const orm = {
       },
 };
 
-// export ORM for model (Burger.js)
+// Export ORM for model (Burger.js)
 module.exports = orm;
