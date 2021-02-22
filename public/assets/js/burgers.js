@@ -41,11 +41,11 @@ document.addEventListener('DOMConetentLoaded', (event) => {
 
     // CREATE
     const createBurgerBtn = document.getElementById('create-form');
-
+    console.log(createBurgerBtn);
     if (createBurgerBtn) {
         createBurgerBtn.addEventListener('submit', (e) => {
             e.preventDefault();
-
+            console.log('Do the thing');
             const newBurger = {
                 name: document.getElementById('burg').value.trim(),
                 devoured: document.getElementById('devoured').checked,
@@ -64,7 +64,7 @@ document.addEventListener('DOMConetentLoaded', (event) => {
                 document.getElementById('burg').value = '';
 
                 console.log('Created a new burger!');
-                location.reload();
+                // location.reload();
             });
         });
     }

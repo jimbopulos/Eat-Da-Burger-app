@@ -7,18 +7,16 @@ const Burger = require('../models/Burger');
 
 // Routes
 router.get('/', (req, res) => {
-    // Burger.all((data) => {
-    //   const hbsObject = {
-    //     burgers: data,
-    //   };
-    //   console.log(hbsObject);
-    //   res.render('index', hbsObject);
-    // });
-    res.send('Hello World');
+    Burger.all((data) => {
+      const hbsObject = {
+        burgers: data,
+      };
+      res.render('index', hbsObject);
+    });
   });
 
 router.post('/api/burgers', (req, res) => {
-Burger.create(['name', 'devoured'], [req.body.name, req.body.devoured], (result) => {
+  Burger.create(['name', 'devoured'], [req.body.name, req.body.devoured], (result) => {
     res.json({ id: result.insertId });
     });
 });
