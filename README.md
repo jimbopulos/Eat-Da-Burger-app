@@ -20,7 +20,7 @@ Simply open the deployed Heroku application to begin!
 ## Usage
 
 - Users may select the `DEVOUR` buttons from burgers in the 'To Be Devoured' column, which will send the burger they're craving to the 'Devoured' section.
-- From there, if a user wishes to re-order the same burger for another round, they may do so by clicking the `RE-ORDER IT!` button.
+- From there, if a user wishes to re-order the same burger for another round, they may do so by clicking the `RE-ORDER!` button.
 - If a user would like to devour a burger not yet on the list, they may use the `'Add Burger'` form section to do so.
 - At any given time, should a user become disgusted with a burger in either list, they may delete it using any of the attached `DELETE` buttons.
 
