@@ -1,11 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Teko:wght@500&display=swap');
+
 * {
   box-sizing: border-box;
-  background-color: rgb(240, 193, 107);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-  background-color: rgb(240, 193, 107);
+  background-image: linear-gradient(rgb(240, 193, 107), rgb(247, 217, 52), green, tomato);
 }
 
 img {
@@ -33,19 +33,26 @@ h2 {
 
 li {
   padding: 5px;
-  margin: 5px;
+  margin: 2%;
   font-size: 16px;
 }
 
 button {
-  background-color: gold;
+  margin: 0.25%;
+  background-color: rgb(247, 217, 52);
   border-radius: 5px;
-  border: solid 3px tomato;
-  padding: 8px;
+  border: solid 2px tomato;
+  padding: 4px;
+  transition: all .3s ease-in-out;
 }
 
 button:hover {
+  margin: 1%;
+  padding: 5px;
+  color:rgb(247, 217, 52);
+  border: solid 2px rgb(247, 217, 52); 
   background-color: tomato;
+  transform: scale(1.1);
 }
 
 label {
@@ -86,12 +93,44 @@ label {
 .col-md-12 {
   margin-top: 1rem;
   padding: 2rem;
-  border: solid 5px tomato;
   border-radius: 5px;
 }
 
-.col-md-6 {
+.left-burgers,
+.right-burgers {
+  box-shadow: -4px 5px 15px black;
+  background-color:rgb(247, 154, 40);
   padding: 2rem;
-  border: solid 5px tomato;
   border-radius: 5px;
+}
+
+.add-a-burger {
+  background-color:rgb(247, 154, 40);
+  padding: 2rem;
+  font-family: 'Merriweather Sans', sans-serif;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-bottom: 5%;
+  box-shadow: -4px 5px 15px black;
+  border-radius: 5px;
+}
+
+#burger-lists {
+  display: flex;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+#burg {
+  border-radius: 4px;
+  margin-left: 1%;
+  transition: all .3s ease-in-out;
+}
+
+#burg:hover {
+  transform: scale(1.1);
+  margin-left: 1%;
+}
+
+#create-form {
+
 }
